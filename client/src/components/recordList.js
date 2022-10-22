@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import "/Users/reeyankhimani/Desktop/HackGwinnett2.0/client/src/components/style.css";
  
 const Record = (props) => (
  <tr>
@@ -67,19 +68,22 @@ export default function RecordList() {
  
  // This following section will display the table with the records of individuals.
  return (
-   <div>
-     <h3>Record List</h3>
-     <table className="table table-striped" style={{ marginTop: 20 }}>
-       <thead>
-         <tr>
-           <th>Name</th>
-           <th>Position</th>
-           <th>Level</th>
-           <th>Action</th>
-         </tr>
-       </thead>
-       <tbody>{recordList()}</tbody>
-     </table>
-   </div>
+    <div>
+
+    </div>
+//    <div>
+//      <h3>Record List</h3>
+//      <table className="table table-striped" style={{ marginTop: 20 }}>
+//        <thead>
+//          <tr>
+//            <th>Name</th>
+//            <th>Position</th>
+//            <th>Level</th>
+//            <th>Action</th>
+//          </tr>
+//        </thead>
+//        <tbody>{recordList()}</tbody>
+//      </table>
+//    </div>
  );
 }

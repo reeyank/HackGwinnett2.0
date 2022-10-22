@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router";
+import "/Users/reeyankhimani/Desktop/HackGwinnett2.0/client/src/components/style.css";
  
 export default function Edit() {
  const [form, setForm] = useState({
@@ -66,6 +67,8 @@ export default function Edit() {
  
  // This following section will display the form that takes input from the user to update the data.
  return (
+   <body>
+    <img style={{"width" : 1000 + 'px'}} src="https://rocketstem.b-cdn.net/wp-content/uploads/2020/11/EmvV4u1UcAAnvjg.jpeg"></img>
    <div>
      <h3>Update Record</h3>
      <form onSubmit={onSubmit}>
@@ -138,5 +141,6 @@ export default function Edit() {
        </div>
      </form>
    </div>
+   </body>
  );
 }
