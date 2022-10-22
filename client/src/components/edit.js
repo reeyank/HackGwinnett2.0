@@ -15,7 +15,7 @@ export default function Edit() {
  useEffect(() => {
    async function fetchData() {
      const id = params.id.toString();
-     const response = await fetch(`http://localhost:5000/record/${params.id.toString()}`);
+     const response = await fetch(`http://localhost:3000/record/${params.id.toString()}`);
  
      if (!response.ok) {
        const message = `An error has occurred: ${response.statusText}`;
@@ -54,7 +54,7 @@ export default function Edit() {
    };
  
    // This will send a post request to update the data in the database.
-   await fetch(`http://localhost:5000/update/${params.id}`, {
+   await fetch(`http://localhost:3000/update/${params.id}`, {
      method: "POST",
      body: JSON.stringify(editedPerson),
      headers: {
@@ -68,9 +68,8 @@ export default function Edit() {
  // This following section will display the form that takes input from the user to update the data.
  return (
    <body>
-    <img style={{"width" : 1000 + 'px'}} src="https://rocketstem.b-cdn.net/wp-content/uploads/2020/11/EmvV4u1UcAAnvjg.jpeg"></img>
    <div>
-     <h3>Update Record</h3>
+     <h3>Update Information</h3>
      <form onSubmit={onSubmit}>
        <div className="form-group">
          <label htmlFor="name">Name: </label>
@@ -98,36 +97,36 @@ export default function Edit() {
              className="form-check-input"
              type="radio"
              name="positionOptions"
-             id="positionIntern"
-             value="Intern"
-             checked={form.level === "Intern"}
+             id="positionAstronaut"
+             value="Astronaut"
+             checked={form.level === "Astronaut"}
              onChange={(e) => updateForm({ level: e.target.value })}
            />
-           <label htmlFor="positionIntern" className="form-check-label">Intern</label>
+           <label htmlFor="positionAstronaut" className="form-check-label">Astronaut</label>
          </div>
          <div className="form-check form-check-inline">
            <input
              className="form-check-input"
              type="radio"
              name="positionOptions"
-             id="positionJunior"
-             value="Junior"
-             checked={form.level === "Junior"}
+             id="positionEssentialWorker"
+             value="Essential Worker"
+             checked={form.level === "Essential Worker"}
              onChange={(e) => updateForm({ level: e.target.value })}
            />
-           <label htmlFor="positionJunior" className="form-check-label">Junior</label>
+           <label htmlFor="positionEssentialWorker" className="form-check-label">Essential Worker</label>
          </div>
          <div className="form-check form-check-inline">
            <input
              className="form-check-input"
              type="radio"
              name="positionOptions"
-             id="positionSenior"
-             value="Senior"
-             checked={form.level === "Senior"}
+             id="positionNormalPerson"
+             value="Normal Person"
+             checked={form.level === "Normal Person"}
              onChange={(e) => updateForm({ level: e.target.value })}
            />
-           <label htmlFor="positionSenior" className="form-check-label">Senior</label>
+           <label htmlFor="positionNormalPerson" className="form-check-label">Normal Person</label>
        </div>
        </div>
        <br />

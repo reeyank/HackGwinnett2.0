@@ -35,14 +35,14 @@ export default function Navbar() {
          <ul className="navbar-nav ml-auto">
            <li className="nav-item">
              <NavLink className="nav-link" to="/create">
-               Create Record
+               Create Quote!
              </NavLink>
            </li>
          </ul>
        </div>
      </nav>
    </div>
-   <img style={{"width" : 1000 + 'px'}} src="https://rocketstem.b-cdn.net/wp-content/uploads/2020/11/EmvV4u1UcAAnvjg.jpeg"></img>
+   <img style={{"width" : "fit-content"}} src="https://rocketstem.b-cdn.net/wp-content/uploads/2020/11/EmvV4u1UcAAnvjg.jpeg"></img>
    </body>
   );
 }
