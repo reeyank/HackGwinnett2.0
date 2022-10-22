@@ -5,8 +5,9 @@ import "/Users/reeyankhimani/Desktop/HackGwinnett2.0/client/src/components/style
 const Record = (props) => (
  <tr>
    <td>{props.record.name}</td>
-   <td>{props.record.position}</td>
+   <td>{props.record.position} kg</td>
    <td>{props.record.level}</td>
+   <td>{props.record.position * 100} Dollars</td>
    <td>
      <Link className="btn btn-link" to={`/edit/${props.record._id}`}>Edit</Link> |
      <button className="btn btn-link"
@@ -26,7 +27,7 @@ export default function RecordList() {
  // This method fetches the records from the database.
  useEffect(() => {
    async function getRecords() {
-     const response = await fetch(`http://localhost:5000/record/`);
+     const response = await fetch(`http://localhost:3000/record/`);
  
      if (!response.ok) {
        const message = `An error occurred: ${response.statusText}`;
@@ -45,7 +46,7 @@ export default function RecordList() {
  
  // This method will delete a record
  async function deleteRecord(id) {
-   await fetch(`http://localhost:5000/${id}`, {
+   await fetch(`http://localhost:3000/${id}`, {
      method: "DELETE"
    });
  
@@ -68,22 +69,21 @@ export default function RecordList() {
  
  // This following section will display the table with the records of individuals.
  return (
-    <div>
-
-    </div>
-//    <div>
-//      <h3>Record List</h3>
-//      <table className="table table-striped" style={{ marginTop: 20 }}>
-//        <thead>
-//          <tr>
-//            <th>Name</th>
-//            <th>Position</th>
-//            <th>Level</th>
-//            <th>Action</th>
-//          </tr>
-//        </thead>
-//        <tbody>{recordList()}</tbody>
-//      </table>
-//    </div>
+<body>
+   <div>
+     <h3>Recent History</h3>
+     <table className="table table-striped" style={{ marginTop: 20 }}>
+       <thead>
+         <tr>
+           <th>Name</th>
+           <th>Weight (kg)</th>
+           <th>Ocupation</th>
+           <th>Action</th>
+         </tr>
+       </thead>
+       <body>{recordList()}</body>
+     </table>
+   </div>
+   </body>
  );
 }
