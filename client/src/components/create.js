@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
+import "/Users/reeyankhimani/Desktop/HackGwinnett2.0/client/src/components/style.css";
  
 export default function Create() {
  const [form, setForm] = useState({
@@ -41,6 +42,7 @@ export default function Create() {
  
  // This following section will display the form that takes the input from the user.
  return (
+    <body>
    <div>
      <h3>Create New Record</h3>
      <form onSubmit={onSubmit}>
@@ -111,5 +113,6 @@ export default function Create() {
        </div>
      </form>
    </div>
+</body>
  );
 }
