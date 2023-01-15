@@ -12,7 +12,7 @@ import Create from "./components/create";
 const App = () => {
  return (
    <div>
-     <Navbar />
+     <Navbar/>
      <Routes>
        <Route exact path="/" element={<RecordList />} />
        <Route path="/edit/:id" element={<Edit />} />
