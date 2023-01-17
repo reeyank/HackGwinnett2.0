@@ -46,7 +46,7 @@ export default function RecordList() {
  
  // This method will delete a record
  async function deleteRecord(id) {
-   await fetch(`http://localhost:3000/${id}`, {
+   await fetch(`https://webmaster.herokuapp.com/${id}`, {
      method: "DELETE"
    });
  
