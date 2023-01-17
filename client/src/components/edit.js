@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router";
-import "/Users/reeyankhimani/Desktop/HackGwinnett2.0/client/src/components/style.css";
  
 export default function Edit() {
  const [form, setForm] = useState({
