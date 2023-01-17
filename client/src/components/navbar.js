@@ -1,4 +1,4 @@
-import "/Users/reeyankhimani/Desktop/HackGwinnett2.0/client/src/input.css"
+import "../input.css"
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
