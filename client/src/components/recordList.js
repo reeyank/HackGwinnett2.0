@@ -26,7 +26,7 @@ export default function RecordList() {
  // This method fetches the records from the database.
  useEffect(() => {
    async function getRecords() {
-     const response = await fetch(`https://webmaster-sever.herokuapp.com/record/`);
+     const response = await fetch(`https://webmaster-server.herokuapp.com/record/`);
  
      if (!response.ok) {
        const message = `An error occurred: ${response.statusText}`;
@@ -45,7 +45,7 @@ export default function RecordList() {
  
  // This method will delete a record
  async function deleteRecord(id) {
-   await fetch(`https://webmaster.herokuapp.com/${id}`, {
+   await fetch(`https://webmaster-server.herokuapp.com/${id}`, {
      method: "DELETE"
    });
  
