@@ -15,6 +15,7 @@ const App = () => {
        <Route exact path="/" element={<RecordList />} />
        <Route path="/edit/:id" element={<Edit />} />
        <Route path="/create" element={<Create />} />
+       <Route exact path="/record" element={<RecordList />} />
      </Routes>
    </div>
  );
