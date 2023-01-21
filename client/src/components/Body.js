@@ -48,7 +48,7 @@ class Body extends React.Component {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link " href="contacts.html">
+                  <a className="nav-link " href="/create">
                     Price Calculator
                   </a>
                 </li>
