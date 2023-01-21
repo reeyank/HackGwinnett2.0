@@ -4,8 +4,6 @@ import "../assets/css/Footer-Dark-icons.css";
 import "../assets/fonts/material-icons.min.css";
 import "../assets/fonts/fontawesome-all.min.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import "https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap";
-
 
 
 
