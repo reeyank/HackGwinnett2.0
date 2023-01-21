@@ -1,7 +1,7 @@
 import React from "react";
-import "/Users/reeyankhimani/Desktop/HackGwinnett2.0/client/src/assets/bootstrap/css/bootstrap.min.css";
+import "../src/assets/bootstrap/css/bootstrap.min.css";
 import "../assets/js/bold-and-dark.js";
-import "/Users/reeyankhimani/Desktop/HackGwinnett2.0/client/src/assets/css/Footer-Dark-icons.css";
+import "../src/assets/css/Footer-Dark-icons.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 
