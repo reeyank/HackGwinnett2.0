@@ -8,7 +8,7 @@ import RecordList from "./components/recordList";
 import Create from "./components/create";
 import Edit from "./components/edit";
 import Body from "./components/Body";
-import Pricing from "./components/Pricing";
+import Pricing from "./components/pricing";
  
 const App = () => {
  return (
