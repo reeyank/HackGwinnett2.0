@@ -1,6 +1,7 @@
 import React from "react";
 import "../assets/bootstrap/css/bootstrap.min.css";
 import "../assets/css/Footer-Dark-icons.css";
+import "../assets/fonts/material-icons.min.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 
@@ -46,7 +47,7 @@ class Body extends React.Component {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="contacts.html">
+                  <a className="nav-link " href="contacts.html">
                     Price Calculator
                   </a>
                 </li>
