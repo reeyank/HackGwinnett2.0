@@ -1,6 +1,6 @@
 import React from "react";
-import "client/src/assets/bootstrap/css/bootstrap.min.css";
-import "client/src/assets/bootstrap/css/Footer-Dark-icons.css";
+import "../assets/bootstrap/css/bootstrap.min.css";
+import "../assets/bootstrap/css/Footer-Dark-icons.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 
