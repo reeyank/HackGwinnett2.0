@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
  
 // We import all the components we need in our app
 import RecordList from "./components/recordList";
+import Create from "./components/create";
 import Edit from "./components/edit";
 import Body from "./components/Body";
  
