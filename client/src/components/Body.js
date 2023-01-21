@@ -1,7 +1,7 @@
 import React from "react";
-import "../src/assets/bootstrap/css/bootstrap.min.css";
-import "../src/assets/js/bold-and-dark.js";
-import "../src/assets/css/Footer-Dark-icons.css";
+import "client/src/assets/bootstrap/css/bootstrap.min.css";
+import "client/src/assets/js/bold-and-dark.js";
+import "client/src/assets/bootstrap/css/Footer-Dark-icons.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 
