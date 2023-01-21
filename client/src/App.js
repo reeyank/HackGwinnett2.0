@@ -8,6 +8,7 @@ import RecordList from "./components/recordList";
 import Create from "./components/create";
 import Edit from "./components/edit";
 import Body from "./components/Body";
+import Pricing from "./components/Pricing";
  
 const App = () => {
  return (
@@ -16,6 +17,7 @@ const App = () => {
        <Route exact path="/" element={<Body />} />
        <Route path="/edit/:id" element={<Edit />} />
        <Route path="/create" element={<Create />} />
+       <Route path="/price" element={<Pricing />} />
        <Route exact path="/record" element={<RecordList />} />
      </Routes>
    </div>
