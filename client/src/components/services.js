@@ -1,6 +1,6 @@
 import React from "react";
 
-class pricing extends React.Component {
+class services extends React.Component {
   render() {
     return (
       <div>
@@ -44,7 +44,7 @@ class pricing extends React.Component {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="services.html">
+                  <a className="nav-link active" href="services.html">
                     Services
                   </a>
                 </li>
@@ -54,7 +54,7 @@ class pricing extends React.Component {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="pricing.html">
+                  <a className="nav-link" href="pricing.html">
                     Pricing
                   </a>
                 </li>
@@ -74,187 +74,90 @@ class pricing extends React.Component {
             </div>
           </div>
         </nav>
-        <section className="py-5">
+        <section
+          className="py-5"
+          style={{
+            marginBottom: "-48px"
+          }}
+        >
           <div className="container py-5">
-            <div className="row mb-5">
+            <div className="row mb-4 mb-lg-5">
               <div className="col-md-8 col-xl-6 text-center mx-auto">
-                <h2 className="fw-bold">Pricing</h2>
+                <p className="fw-bold text-success mb-2">Our Services</p>
+                <h3 className="fw-bold">What we can do for you</h3>
               </div>
             </div>
-            <div className="row g-0 row-cols-1 row-cols-md-2 row-cols-xl-3 d-flex align-items-md-center align-items-xl-center">
-              <div className="col offset-xl-2 mb-4">
-                <div className="card bg-dark border-dark">
-                  <div className="card-body p-4">
-                    <div className="d-flex justify-content-between">
-                      <div>
-                        <h3 className="fw-bold mb-0">
-                          Training and Short Flight
-                        </h3>
-                        <h4 className="display-4 fw-bold">$25,000</h4>
-                      </div>
-                    </div>
-                    <div>
-                      <ul className="list-unstyled">
-                        <li className="d-flex mb-2">
-                          <span className="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon bs-icon-xs me-2">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="1em"
-                              height="1em"
-                              fill="currentColor"
-                              viewBox="0 0 16 16"
-                              className="bi bi-check-lg text-primary"
-                            >
-                              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
-                            </svg>
-                          </span>
-                          <span>100 seconds flight</span>
-                        </li>
-                        <li className="d-flex mb-2">
-                          <span className="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon bs-icon-xs me-2">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="1em"
-                              height="1em"
-                              fill="currentColor"
-                              viewBox="0 0 16 16"
-                              className="bi bi-check-lg text-primary"
-                            >
-                              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
-                            </svg>
-                          </span>
-                          <span>Ante nec venenatis etiam lacinia.</span>
-                        </li>
-                        <li className="d-flex mb-2">
-                          <span className="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon bs-icon-xs me-2">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="1em"
-                              height="1em"
-                              fill="currentColor"
-                              viewBox="0 0 16 16"
-                              className="bi bi-check-lg text-primary"
-                            >
-                              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
-                            </svg>
-                          </span>
-                          <span>Porta suscipit netus ad ac.</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <button
-                      className="btn btn-primary d-block w-100"
-                      type="button"
-                    >
-                      Button
-                    </button>
-                  </div>
+            <div
+              className="row row-cols-1 row-cols-md-2 mx-auto"
+              style={{
+                maxWidth: "900px"
+              }}
+            >
+              <div className="col mb-5">
+                <img
+                  className="rounded img-fluid shadow"
+                  src="assets/img/products/history-in-hd-e5eDHbmHprg-unsplash.jpg"
+                />
+              </div>
+              <div className="col d-md-flex align-items-md-end align-items-lg-center mb-5">
+                <div>
+                  <h5 className="fw-bold">Train with a Certified Astronaut</h5>
+                  <p className="text-muted mb-4">
+                    The best of the best with personalized training so that you
+                    have the best flight possible.
+                  </p>
+                  <button className="btn btn-primary shadow" type="button">
+                    Sign up
+                  </button>
                 </div>
               </div>
-              <div className="col mb-4">
-                <div className="card text-white bg-primary">
-                  <div className="card-body p-4">
-                    <div className="d-flex justify-content-between">
-                      <div>
-                        <h3 className="fw-bold text-white mb-0">
-                          Training and Long Flight
-                        </h3>
-                        <h4 className="display-4 fw-bold text-white">
-                          $35,000
-                        </h4>
-                      </div>
-                      <div>
-                        <span className="badge rounded-pill bg-primary text-uppercase bg-semi-white">
-                          Best Value
-                        </span>
-                      </div>
-                    </div>
-                    <div>
-                      <ul className="list-unstyled">
-                        <li className="d-flex mb-2">
-                          <span className="bs-icon-xs bs-icon-rounded bs-icon-semi-white bs-icon bs-icon-xs me-2">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="1em"
-                              height="1em"
-                              fill="currentColor"
-                              viewBox="0 0 16 16"
-                              className="bi bi-check-lg text-primary"
-                            >
-                              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
-                            </svg>
-                          </span>
-                          <span>180 seconds flight</span>
-                        </li>
-                        <li className="d-flex mb-2">
-                          <span className="bs-icon-xs bs-icon-rounded bs-icon-semi-white bs-icon bs-icon-xs me-2">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="1em"
-                              height="1em"
-                              fill="currentColor"
-                              viewBox="0 0 16 16"
-                              className="bi bi-check-lg text-primary"
-                            >
-                              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
-                            </svg>
-                          </span>
-                          <span>Ante nec venenatis etiam lacinia.</span>
-                        </li>
-                        <li className="d-flex mb-2">
-                          <span className="bs-icon-xs bs-icon-rounded bs-icon-semi-white bs-icon bs-icon-xs me-2">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="1em"
-                              height="1em"
-                              fill="currentColor"
-                              viewBox="0 0 16 16"
-                              className="bi bi-check-lg text-primary"
-                            >
-                              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
-                            </svg>
-                          </span>
-                          <span>Porta suscipit netus ad ac.</span>
-                        </li>
-                        <li className="d-flex mb-2">
-                          <span className="bs-icon-xs bs-icon-rounded bs-icon-semi-white bs-icon bs-icon-xs me-2">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="1em"
-                              height="1em"
-                              fill="currentColor"
-                              viewBox="0 0 16 16"
-                              className="bi bi-check-lg text-primary"
-                            >
-                              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
-                            </svg>
-                          </span>
-                          <span>Morbi praesent aptent integer at.</span>
-                        </li>
-                        <li className="d-flex mb-2">
-                          <span className="bs-icon-xs bs-icon-rounded bs-icon-semi-white bs-icon bs-icon-xs me-2">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="1em"
-                              height="1em"
-                              fill="currentColor"
-                              viewBox="0 0 16 16"
-                              className="bi bi-check-lg text-primary"
-                            >
-                              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
-                            </svg>
-                          </span>
-                          <span>Nisl potenti ut auctor lobortis.</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <button
-                      className="btn btn-primary d-block w-100 bg-semi-white"
-                      type="button"
-                    >
-                      Button
-                    </button>
-                  </div>
+            </div>
+            <div
+              className="row row-cols-1 row-cols-md-2 mx-auto"
+              style={{
+                maxWidth: "900px"
+              }}
+            >
+              <div className="col order-md-last mb-5">
+                <img
+                  className="rounded img-fluid shadow"
+                  src="assets/img/products/EmvV4u1UcAAnvjg.jpeg"
+                />
+              </div>
+              <div className="col d-md-flex align-items-md-end align-items-lg-center mb-5">
+                <div>
+                  <h5 className="fw-bold">State-of-the-art spacecraft:</h5>
+                  <p className="text-muted mb-4">
+                    Safe, Reliable, and Comfortable
+                  </p>
+                  <button className="btn btn-primary shadow" type="button">
+                    Sign up
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              className="row row-cols-1 row-cols-md-2 mx-auto"
+              style={{
+                maxWidth: "900px"
+              }}
+            >
+              <div className="col mb-5">
+                <img
+                  className="rounded img-fluid shadow"
+                  src="assets/img/products/3.jpg"
+                />
+              </div>
+              <div className="col d-md-flex align-items-md-end align-items-lg-center mb-5">
+                <div>
+                  <h5 className="fw-bold">Safety and emergency protocols</h5>
+                  <p className="text-muted mb-4">
+                    A robust safety protocol to make sure you are safe during
+                    your flight.
+                  </p>
+                  <button className="btn btn-primary shadow" type="button">
+                    Sign up
+                  </button>
                 </div>
               </div>
             </div>
@@ -379,4 +282,4 @@ class pricing extends React.Component {
   }
 }
 
-export default pricing;
+export default services;
