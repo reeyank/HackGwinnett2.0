@@ -4,21 +4,21 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
  
 // We import all the components we need in our app
-import RecordList from "./components/recordList";
-import Create from "./components/create";
-import Edit from "./components/edit";
-import Body from "./components/Body";
+import Contacts from "./components/contacts";
+import Index from "./components/index";
 import Pricing from "./components/pricing";
+import Projects from "./components/projects";
+import Services from "./components/services";
  
 const App = () => {
  return (
    <div>
      <Routes>
-       <Route exact path="/" element={<Body />} />
-       <Route path="/edit/:id" element={<Edit />} />
-       <Route path="/create" element={<Create />} />
-       <Route path="/price" element={<Pricing />} />
-       <Route exact path="/record" element={<RecordList />} />
+       <Route exact path="/" element={<Index />} />
+       <Route exact path="/contact" element={<Contacts />} />
+       <Route exact path="/price" element={<Pricing />} />
+       <Route exact path="/project" element={<Projects />} />
+       <Route exact path="/service" element={<Services />} />
      </Routes>
    </div>
  );

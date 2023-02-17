@@ -1,6 +1,6 @@
 import React from "react";
 
-class pricing extends React.Component {
+class projects extends React.Component {
   render() {
     return (
       <div>
@@ -49,12 +49,12 @@ class pricing extends React.Component {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="projects.html">
+                  <a className="nav-link active" href="projects.html">
                     Projects
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="pricing.html">
+                  <a className="nav-link" href="pricing.html">
                     Pricing
                   </a>
                 </li>
@@ -78,182 +78,104 @@ class pricing extends React.Component {
           <div className="container py-5">
             <div className="row mb-5">
               <div className="col-md-8 col-xl-6 text-center mx-auto">
-                <h2 className="fw-bold">Pricing</h2>
+                <h2 className="fw-bold">Heading</h2>
+                <p className="text-muted">
+                  Curae hendrerit donec commodo hendrerit egestas tempus, turpis
+                  facilisis nostra nunc. Vestibulum dui eget ultrices.
+                </p>
               </div>
             </div>
-            <div className="row g-0 row-cols-1 row-cols-md-2 row-cols-xl-3 d-flex align-items-md-center align-items-xl-center">
-              <div className="col offset-xl-2 mb-4">
-                <div className="card bg-dark border-dark">
-                  <div className="card-body p-4">
-                    <div className="d-flex justify-content-between">
-                      <div>
-                        <h3 className="fw-bold mb-0">
-                          Training and Short Flight
-                        </h3>
-                        <h4 className="display-4 fw-bold">$25,000</h4>
-                      </div>
-                    </div>
-                    <div>
-                      <ul className="list-unstyled">
-                        <li className="d-flex mb-2">
-                          <span className="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon bs-icon-xs me-2">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="1em"
-                              height="1em"
-                              fill="currentColor"
-                              viewBox="0 0 16 16"
-                              className="bi bi-check-lg text-primary"
-                            >
-                              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
-                            </svg>
-                          </span>
-                          <span>100 seconds flight</span>
-                        </li>
-                        <li className="d-flex mb-2">
-                          <span className="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon bs-icon-xs me-2">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="1em"
-                              height="1em"
-                              fill="currentColor"
-                              viewBox="0 0 16 16"
-                              className="bi bi-check-lg text-primary"
-                            >
-                              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
-                            </svg>
-                          </span>
-                          <span>Ante nec venenatis etiam lacinia.</span>
-                        </li>
-                        <li className="d-flex mb-2">
-                          <span className="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon bs-icon-xs me-2">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="1em"
-                              height="1em"
-                              fill="currentColor"
-                              viewBox="0 0 16 16"
-                              className="bi bi-check-lg text-primary"
-                            >
-                              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
-                            </svg>
-                          </span>
-                          <span>Porta suscipit netus ad ac.</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <button
-                      className="btn btn-primary d-block w-100"
-                      type="button"
-                    >
-                      Button
-                    </button>
+            <div
+              className="row row-cols-1 row-cols-md-2 mx-auto"
+              style={{
+                maxWidth: "900px"
+              }}
+            >
+              <div className="col mb-4">
+                <div>
+                  <a href="#">
+                    <img
+                      className="rounded img-fluid shadow w-100 fit-cover"
+                      src="assets/img/products/1.jpg"
+                      style={{
+                        height: "250px"
+                      }}
+                    />
+                  </a>
+                  <div className="py-4">
+                    <span className="badge bg-primary mb-2">Website</span>
+                    <h4 className="fw-bold">Lorem libero donec</h4>
+                    <p className="text-muted">
+                      Nullam id dolor id nibh ultricies vehicula ut id elit.
+                      Cras justo odio, dapibus ac facilisis in, egestas eget
+                      quam. Donec id elit non mi porta gravida at eget metus.
+                    </p>
                   </div>
                 </div>
               </div>
               <div className="col mb-4">
-                <div className="card text-white bg-primary">
-                  <div className="card-body p-4">
-                    <div className="d-flex justify-content-between">
-                      <div>
-                        <h3 className="fw-bold text-white mb-0">
-                          Training and Long Flight
-                        </h3>
-                        <h4 className="display-4 fw-bold text-white">
-                          $35,000
-                        </h4>
-                      </div>
-                      <div>
-                        <span className="badge rounded-pill bg-primary text-uppercase bg-semi-white">
-                          Best Value
-                        </span>
-                      </div>
-                    </div>
-                    <div>
-                      <ul className="list-unstyled">
-                        <li className="d-flex mb-2">
-                          <span className="bs-icon-xs bs-icon-rounded bs-icon-semi-white bs-icon bs-icon-xs me-2">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="1em"
-                              height="1em"
-                              fill="currentColor"
-                              viewBox="0 0 16 16"
-                              className="bi bi-check-lg text-primary"
-                            >
-                              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
-                            </svg>
-                          </span>
-                          <span>180 seconds flight</span>
-                        </li>
-                        <li className="d-flex mb-2">
-                          <span className="bs-icon-xs bs-icon-rounded bs-icon-semi-white bs-icon bs-icon-xs me-2">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="1em"
-                              height="1em"
-                              fill="currentColor"
-                              viewBox="0 0 16 16"
-                              className="bi bi-check-lg text-primary"
-                            >
-                              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
-                            </svg>
-                          </span>
-                          <span>Ante nec venenatis etiam lacinia.</span>
-                        </li>
-                        <li className="d-flex mb-2">
-                          <span className="bs-icon-xs bs-icon-rounded bs-icon-semi-white bs-icon bs-icon-xs me-2">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="1em"
-                              height="1em"
-                              fill="currentColor"
-                              viewBox="0 0 16 16"
-                              className="bi bi-check-lg text-primary"
-                            >
-                              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
-                            </svg>
-                          </span>
-                          <span>Porta suscipit netus ad ac.</span>
-                        </li>
-                        <li className="d-flex mb-2">
-                          <span className="bs-icon-xs bs-icon-rounded bs-icon-semi-white bs-icon bs-icon-xs me-2">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="1em"
-                              height="1em"
-                              fill="currentColor"
-                              viewBox="0 0 16 16"
-                              className="bi bi-check-lg text-primary"
-                            >
-                              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
-                            </svg>
-                          </span>
-                          <span>Morbi praesent aptent integer at.</span>
-                        </li>
-                        <li className="d-flex mb-2">
-                          <span className="bs-icon-xs bs-icon-rounded bs-icon-semi-white bs-icon bs-icon-xs me-2">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="1em"
-                              height="1em"
-                              fill="currentColor"
-                              viewBox="0 0 16 16"
-                              className="bi bi-check-lg text-primary"
-                            >
-                              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
-                            </svg>
-                          </span>
-                          <span>Nisl potenti ut auctor lobortis.</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <button
-                      className="btn btn-primary d-block w-100 bg-semi-white"
-                      type="button"
-                    >
-                      Button
-                    </button>
+                <div>
+                  <a href="#">
+                    <img
+                      className="rounded img-fluid shadow w-100 fit-cover"
+                      src="assets/img/products/2.jpg"
+                      style={{
+                        height: "250px"
+                      }}
+                    />
+                  </a>
+                  <div className="py-4">
+                    <span className="badge bg-primary mb-2">Website</span>
+                    <h4 className="fw-bold">Lorem libero donec</h4>
+                    <p className="text-muted">
+                      Nullam id dolor id nibh ultricies vehicula ut id elit.
+                      Cras justo odio, dapibus ac facilisis in, egestas eget
+                      quam. Donec id elit non mi porta gravida at eget metus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col mb-4">
+                <div>
+                  <a href="#">
+                    <img
+                      className="rounded img-fluid shadow w-100 fit-cover"
+                      src="assets/img/products/3.jpg"
+                      style={{
+                        height: "250px"
+                      }}
+                    />
+                  </a>
+                  <div className="py-4">
+                    <span className="badge bg-primary mb-2">Website</span>
+                    <h4 className="fw-bold">Lorem libero donec</h4>
+                    <p className="text-muted">
+                      Nullam id dolor id nibh ultricies vehicula ut id elit.
+                      Cras justo odio, dapibus ac facilisis in, egestas eget
+                      quam. Donec id elit non mi porta gravida at eget metus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col mb-4">
+                <div>
+                  <a href="#">
+                    <img
+                      className="rounded img-fluid shadow w-100 fit-cover"
+                      src="assets/img/products/1.jpg"
+                      style={{
+                        height: "250px"
+                      }}
+                    />
+                  </a>
+                  <div className="py-4">
+                    <span className="badge bg-primary mb-2">Website</span>
+                    <h4 className="fw-bold">Lorem libero donec</h4>
+                    <p className="text-muted">
+                      Nullam id dolor id nibh ultricies vehicula ut id elit.
+                      Cras justo odio, dapibus ac facilisis in, egestas eget
+                      quam. Donec id elit non mi porta gravida at eget metus.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -379,4 +301,4 @@ class pricing extends React.Component {
   }
 }
 
-export default pricing;
+export default projects;
